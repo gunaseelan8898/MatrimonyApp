@@ -16,7 +16,7 @@ const SplashScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <LinearGradient colors={['#f7ae02', '#f547e1']} style={styles.header}>
-                <StatusBar backgroundColor='#f7ae02' barStyle="light-content" />
+                <StatusBar backgroundColor='transparent' translucent={true} barStyle="light-content" />
                 <Animatable.Image
                     animation="bounceIn"
                     duration={5000}
@@ -38,7 +38,7 @@ const SplashScreen = ({ navigation }) => {
                     <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
                         <LinearGradient
                             style={styles.signIn}
-                            colors={['#f7ae02', '#f702db']}
+                            colors={['#f7ae02', '#f547e1']}
                             start={{ x: 0, y: 1 }}
                             end={{ x: 1, y: 1 }}
                         >
