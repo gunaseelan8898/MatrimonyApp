@@ -4,13 +4,16 @@ import { Image, StatusBar, StyleSheet, Text, View } from 'react-native'
 
 import HeaderTab from '../components/Header'
 
-const HomeScreen = () => {
+const HomeScreen = props => {
     return (
         <View style={styles.container}>
-          <HeaderTab />
+          <HeaderTab onSelect={() => {
+          props.navigation.toggleDrawer();}}></HeaderTab>
         </View>
     )
 }
+
+
 
 export default HomeScreen
 
@@ -20,3 +23,6 @@ const styles = StyleSheet.create({
     },
     
 })
+
+
+

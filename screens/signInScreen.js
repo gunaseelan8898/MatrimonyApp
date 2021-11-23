@@ -8,13 +8,15 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 const SignInScreen = ({ navigation }) => {
-  
+
 
     return (
-        <LinearGradient style={styles.container} colors={['#f7ae02', '#f547e1']}>
-            <View style={{marginBottom:15   }}>
-                 <ImageBackground source={require('../assets/new.png')} style={{ height: 150, width: 160}} resizeMode='contain' />
-                 <Text style={{ fontWeight: '900', fontSize: 30, color: 'black' }}>Welcome !!!</Text>
+        <LinearGradient style={styles.container} colors={['#F66D64', '#F661A3']}
+            start={{ x: 0, y: 1 }}
+            end={{ x: 1, y: 1 }}>
+            <View style={{ marginBottom: 15 }}>
+                <ImageBackground source={require('../assets/new.png')} style={{ height: 150, width: 160 }} resizeMode='contain' />
+                <Text style={{ fontWeight: '900', fontSize: 30, color: 'black' }}>Welcome !!!</Text>
             </View>
             <BlurView style={styles.card}>
                 <Text style={styles.label}>E-mail</Text>
@@ -25,13 +27,13 @@ const SignInScreen = ({ navigation }) => {
                         placeholderTextColor="#636261"
                         selectionColor='black'
                         maxLength={35}
-                        style={{ color: 'black', width:200, fontSize: 16,paddingLeft:5}}
+                        style={{ color: 'black', width: 200, fontSize: 16, paddingLeft: 5 }}
                         autoCapitalize="none"
-                        onChangeText={() => {}}
+                        onChangeText={() => { }}
                         onEndEditing={() => { }}
                     />
-                        <Ionicons name="checkmark" size={24} color="green" />
-                        
+                    <Ionicons name="checkmark" size={24} color="green" />
+
                 </View>
                 <Text style={styles.label}>Password</Text>
                 <View style={styles.action}>
@@ -40,19 +42,19 @@ const SignInScreen = ({ navigation }) => {
                         placeholder="Password"
                         placeholderTextColor="#636261"
                         maxLength={8}
-                        secureTextEntry= {true}
+                        secureTextEntry={true}
                         selectionColor='black'
-                        style={{ color: 'black', width:195, fontSize: 16,}}
+                        style={{ color: 'black', width: 195, fontSize: 16, }}
                         autoCapitalize="none"
-                        onChangeText= { () => {}}
+                        onChangeText={() => { }}
                     />
-                            <Feather
-                                name="eye-off"
-                                color="#424242"
-                                size={19}
-                            />
-                         
-                </View> 
+                    <Feather
+                        name="eye-off"
+                        color="#424242"
+                        size={19}
+                    />
+
+                </View>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
                     <TouchableOpacity onPress={() => navigation.navigate('Home')}>
                         <View style={styles.Button}>
@@ -91,7 +93,7 @@ const styles = StyleSheet.create({
         width: '80%',
         marginLeft: 30,
         marginVertical: 5,
-        justifyContent:'space-between'
+        justifyContent: 'space-between'
     },
     card: {
         height: 275,
@@ -127,6 +129,6 @@ const styles = StyleSheet.create({
     errorMsg: {
         color: '#FF0000',
         fontSize: 14,
-        marginHorizontal:40,
+        marginHorizontal: 40,
     }
 })

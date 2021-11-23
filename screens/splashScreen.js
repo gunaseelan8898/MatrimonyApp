@@ -14,8 +14,12 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const SplashScreen = ({ navigation }) => {
     return (
-        <View style={styles.container}>
-            <LinearGradient colors={['#f7ae02', '#f547e1']} style={styles.header}>
+        <LinearGradient colors={['#F66D64', '#F661A3']} start={{ x: 0, y: 1 }}
+            end={{ x: 1, y: 1}} style={styles.container}>
+            <LinearGradient colors={['#F66D64', '#F661A3']} 
+            start={{ x: 0, y: 1 }}
+            end={{ x: 1, y: 1}}
+            style={styles.header}>
                 <StatusBar backgroundColor='transparent' translucent={true} barStyle="light-content" />
                 <Animatable.Image
                     animation="bounceIn"
@@ -38,7 +42,7 @@ const SplashScreen = ({ navigation }) => {
                     <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
                         <LinearGradient
                             style={styles.signIn}
-                            colors={['#f7ae02', '#f547e1']}
+                            colors={['#fc5247','#ff7db8']}
                             start={{ x: 0, y: 1 }}
                             end={{ x: 1, y: 1 }}
                         >
@@ -53,7 +57,7 @@ const SplashScreen = ({ navigation }) => {
                     </TouchableOpacity>
                 </View>
             </Animatable.View >
-        </View >
+        </LinearGradient >
     );
 };
 
@@ -65,7 +69,7 @@ const height_logo = height * 0.28;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f547e1'
+        backgroundColor:'#F66D64'
     },
     header: {
         flex: 2,

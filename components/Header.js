@@ -2,9 +2,10 @@ import { LinearGradient } from 'expo-linear-gradient'
 import React, { useState } from 'react'
 import { Image, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import * as Animatable from 'react-native-animatable';
+import { FontAwesome } from '@expo/vector-icons';
 
 
-export default function HeaderTab() {
+export default function HeaderTab(props) {
     const [activeTab, setActiveTab] = useState('Normal')
     return (
         <LinearGradient colors={['#F66D64', '#F661A3']} style={styles.header}
@@ -28,16 +29,18 @@ export default function HeaderTab() {
                 />
             </View>
             <Image source={require('../assets/male.png')} style={styles.user} />
-            <Image source={require('../assets/menu1.png')} style={{position:'absolute',top:158,left:20,height:25,width:25}} />
             <View>
-            <Text style={styles.hi}>Hi...</Text>
            <Animatable.View
                 animation='tada'
                 iterationCount={10}
                 duration={2000} delay={1000}
             >
-            <Image source={require('../assets/handwaving.png')} style={{position:'absolute',height:40,width:40,top:138,left:165}} />
+            <Image source={require('../assets/handwaving.png')} style={{position:'absolute',height:40,width:40,top:138,left:110}} />
             </Animatable.View>
+            <Text style={styles.hi}>Hi...</Text>
+            <TouchableOpacity onPress={props.onSelect}s style={{position:'absolute',top:158,left:20,height:25,width:25}}>
+            <FontAwesome name="bars" size={26} color="white" />
+            </TouchableOpacity>
              <Text style={styles.userName}>Gunaseelan</Text>
             </View>
         </LinearGradient>
@@ -68,7 +71,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         height: 70,
         width: 70,
-        left: 260,
+        left: 270,
         top:85,
         borderRadius: 50
 
@@ -76,7 +79,7 @@ const styles = StyleSheet.create({
     hi: {
         position: 'absolute',
         top:150,
-        left:110,
+        left:165,
         fontSize:25,
         //fontWeight:'bold',
         color: 'black'

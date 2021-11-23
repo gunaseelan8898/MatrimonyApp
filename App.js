@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View,StatusBar } from 'react-native';
 
-import Root from './navigation/navigator'
+import StackNavigator from './navigation/StackNavigator';
+import AppDrawer from './navigation/DrawerNavigator'
 
 export default function App() {
   return (
     <View style={{flex:1}}>
-    <Root/>
+      <AppDrawer/>
     </View>
   );
 }
