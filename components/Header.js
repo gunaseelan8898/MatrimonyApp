@@ -35,10 +35,10 @@ export default function HeaderTab(props) {
                 iterationCount={10}
                 duration={2000} delay={1000}
             >
-            <Image source={require('../assets/handwaving.png')} style={{position:'absolute',height:40,width:40,top:138,left:110}} />
+            <Image source={require('../assets/handwaving.png')} style={{position:'absolute',height:40,width:40,top:128,left:110}} />
             </Animatable.View>
             <Text style={styles.hi}>Hi...</Text>
-            <TouchableOpacity onPress={props.onSelect}s style={{position:'absolute',top:158,left:20,height:25,width:25}}>
+            <TouchableOpacity onPress={props.onSelect}s style={{position:'absolute',top:148,left:20,height:25,width:25}}>
             <FontAwesome name="bars" size={26} color="white" />
             </TouchableOpacity>
              <Text style={styles.userName}>Gunaseelan</Text>
@@ -62,7 +62,7 @@ const Swipe = (props) => (
 
 const styles = StyleSheet.create({
     header: {
-        height: 210,
+        height: 190,
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
 
@@ -72,13 +72,13 @@ const styles = StyleSheet.create({
         height: 70,
         width: 70,
         left: 270,
-        top:85,
+        top:70,
         borderRadius: 50
 
     },
     hi: {
         position: 'absolute',
-        top:150,
+        top:140,
         left:165,
         fontSize:25,
         //fontWeight:'bold',
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     },
     userName: {
         position: 'absolute',
-        top:160,
+        top:150,
         left:260,
         fontSize:16,
         width:85,

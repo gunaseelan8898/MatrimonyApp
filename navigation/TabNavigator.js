@@ -59,7 +59,7 @@ const TabNavigator = createMaterialBottomTabNavigator({
           initialRouteName: 'Home',
           activeColor:'#F66D64',
           inactiveColor: 'black',
-          barStyle: { backgroundColor:'white',height:55,},
+          barStyle: { backgroundColor:'white',},
         }
       
 )

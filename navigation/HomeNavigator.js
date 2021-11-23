@@ -4,11 +4,13 @@ import { createAppContainer } from "react-navigation";
 import HomeScreen from '../screens/HomeScreen'
 import FavouritesScreen from '../screens/FavouritesScreen';
 import ProfileScreen from '../screens/ProfileScreen'
+import MemberDetailScreen from '../screens/MemberDetailScreen';
 
 const HomeNavigator = createStackNavigator({
     Home:HomeScreen, 
     Favourite:FavouritesScreen,
-    Profile:ProfileScreen
+    Profile:ProfileScreen,
+    Member:MemberDetailScreen
 },
 {
    headerMode:'none'
