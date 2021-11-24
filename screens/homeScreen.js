@@ -26,6 +26,7 @@ const HomeScreen = props => {
             <FlatList
                 data={USER}
                 keyExtractor={item => item.id}
+                showsVerticalScrollIndicator={false}
                 renderItem={itemData => 
                     <Card
                         image={itemData.item.imageUrl}

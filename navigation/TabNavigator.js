@@ -5,6 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons'; 
 import { MaterialIcons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
 import HomeScreen from "../screens/HomeScreen";
 import FavouritesScreen from "../screens/FavouritesScreen";
@@ -28,7 +29,7 @@ const TabNavigator = createMaterialBottomTabNavigator({
             navigationOptions: {
                 tabBarIcon: tabInfo => {
                   return (
-                    <MaterialIcons name="search" size={26} color="black" />
+                    <MaterialCommunityIcons name="cards-outline" size={26} color="black" />
                   );
                 },
               }

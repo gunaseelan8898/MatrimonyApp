@@ -34,9 +34,6 @@ const Card = props => {
               <Text style={styles.salary}>{props.salary}</Text>
               </View>
             </View>
-            <View style={styles.actions}>
-              {props.children}
-            </View>
           </View>
         </TouchableCmp>
       </View>
@@ -54,7 +51,7 @@ const styles = StyleSheet.create({
     elevation: 5,
     borderRadius: 10,
     backgroundColor: 'white',
-    height: 300,
+    height: 250,
     margin: 20
   },
   touchable: {
@@ -74,14 +71,16 @@ const styles = StyleSheet.create({
     resizeMode:'contain'
   },
   details: {
-    height: '15%',
+    height: '35%',
     flexDirection:'row',
     justifyContent:'space-between',
     paddingHorizontal:15,
+    paddingTop:10,
+    backgroundColor:'#fdf7ff'
 },
   name: {
     fontSize:20,
-    fontWeight:'bold',
+    fontFamily:'OpenSans-SemiBold',
     marginVertical: 2
   },
   age: {
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
   },
   job: {
     fontSize:16,
-    
+    fontFamily:'OpenSans-Regular',
     marginVertical: 2
   },
   salary: {
@@ -99,13 +98,6 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     color: '#888'
   },
-  actions: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: '20%',
-    paddingHorizontal: 20
-  }
 });
 
 export default Card;

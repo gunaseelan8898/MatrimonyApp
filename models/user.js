@@ -1,5 +1,5 @@
 class User{
-    constructor(id,gender,imageUrl,name,age,height,weight,job,salary,){
+    constructor(id,gender,imageUrl,name,age,height,weight,job,salary,religion){
                 this.id=id;
                 this.gender=gender;
                 this.imageUrl=imageUrl;
@@ -9,6 +9,7 @@ class User{
                 this.weight=weight;
                 this.job=job;
                 this.salary=salary;
+                this.religion=religion;
     }
 }
 

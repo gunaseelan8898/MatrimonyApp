@@ -16,7 +16,7 @@ const SignInScreen = ({ navigation }) => {
             end={{ x: 1, y: 1 }}>
             <View style={{ marginBottom: 15 }}>
                 <ImageBackground source={require('../assets/new.png')} style={{ height: 150, width: 160 }} resizeMode='contain' />
-                <Text style={{ fontWeight: '900', fontSize: 30, color: 'black' }}>Welcome !!!</Text>
+                <Text style={{ fontFamily:'OpenSans-Bold', fontSize: 30, color: 'black' }}>Welcome !!!</Text>
             </View>
             <BlurView style={styles.card}>
                 <Text style={styles.label}>E-mail</Text>
@@ -58,12 +58,12 @@ const SignInScreen = ({ navigation }) => {
                 <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
                     <TouchableOpacity onPress={() => navigation.navigate('Home')}>
                         <View style={styles.Button}>
-                            <Text style={{ fontWeight: 'bold', fontSize: 16 }}>Login</Text>
+                            <Text style={{ fontFamily:'OpenSans-Bold', fontSize: 16 }}>Login</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
                         <View style={styles.Button}>
-                            <Text style={{ fontWeight: 'bold', fontSize: 16 }}>SignUp</Text>
+                            <Text style={{ fontFamily:'OpenSans-Bold', fontSize: 16 }}>SignUp</Text>
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -107,7 +107,8 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         marginTop: 25,
         fontSize: 18,
-        fontWeight: 'bold'
+        //fontWeight: 'bold'
+        fontFamily:'OpenSans-SemiBold'
     },
     input: {
         height: 30,

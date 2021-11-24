@@ -27,11 +27,11 @@ const AppDrawer = createDrawerNavigator({
                 <View style={styles.lineStyle} />
                 <TouchableOpacity onPress={() => { props.navigation.navigate('Profile') }} style={{ flexDirection: 'row', marginLeft: 35, marginTop: 20, alignItems: 'center' }}>
                     <MaterialCommunityIcons name="account-circle-outline" size={30} color="black" />
-                    <Text style={{ fontSize: 18, marginLeft: 15 }}>View Profile</Text>
+                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>View Profile</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
                     <MaterialCommunityIcons name="account-edit-outline" size={30} color="black" />
-                    <Text style={{ fontSize: 18, marginLeft: 15 }}>Edit Profile</Text>
+                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>Edit Profile</Text>
                 </TouchableOpacity>
                 <View style={{
                     borderWidth: 0.2,
@@ -41,11 +41,11 @@ const AppDrawer = createDrawerNavigator({
                 }} />
                 <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 20, alignItems: 'center' }}>
                     <Ionicons name="ios-notifications-circle-outline" size={30} color="black" />
-                    <Text style={{ fontSize: 18, marginLeft: 15 }}>Notifications</Text>
+                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>Notifications</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
                     <MaterialIcons name="search" size={30} color="black" />
-                    <Text style={{ fontSize: 18, marginLeft: 15 }}>Searches</Text>
+                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>Searches</Text>
                 </TouchableOpacity>
                 <View style={{
                     borderWidth: 0.2,
@@ -55,14 +55,14 @@ const AppDrawer = createDrawerNavigator({
                 }} />
                 <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 20, alignItems: 'center' }}>
                     <MaterialIcons name="miscellaneous-services" size={30} color="black" />
-                    <Text style={{ fontSize: 18, marginLeft: 15 }}>Other Services</Text>
+                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>Other Services</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
                     <AntDesign name="infocirlceo" size={25} color="black" />
-                    <Text style={{ fontSize: 18, marginLeft: 15 }}>About</Text>
+                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 17 }}>About</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.logout}>
-                    <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Logout</Text>
+                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', fontWeight: 'bold' }}>Logout</Text>
                 </TouchableOpacity>
 
             </LinearGradient>

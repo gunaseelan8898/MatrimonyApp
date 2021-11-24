@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Image, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import * as Animatable from 'react-native-animatable';
 import { FontAwesome } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 
 
 export default function HeaderTab(props) {
@@ -12,7 +13,7 @@ export default function HeaderTab(props) {
             start={{ x: 0, y: 1 }}
             end={{ x: 1, y: 1 }}>
             <StatusBar barStyle='default' backgroundColor='transparent' translucent={true} />
-            <View style={{ flexDirection: 'row', position: 'absolute', top:50, left: 100 , }}>
+            <View style={{ flexDirection: 'row', position: 'absolute', top:55, left: 115 , }}>
                 <Swipe
                     text='Normal'
                     btnColor='white'
@@ -28,20 +29,22 @@ export default function HeaderTab(props) {
                 setActiveTab={setActiveTab}
                 />
             </View>
-            <Image source={require('../assets/male.png')} style={styles.user} />
+            
             <View>
            <Animatable.View
                 animation='tada'
                 iterationCount={10}
                 duration={2000} delay={1000}
             >
-            <Image source={require('../assets/handwaving.png')} style={{position:'absolute',height:40,width:40,top:128,left:110}} />
+            <Image source={require('../assets/handwaving.png')} style={{position:'absolute',height:40,width:40,top:128,left:80}} />
             </Animatable.View>
-            <Text style={styles.hi}>Hi...</Text>
-            <TouchableOpacity onPress={props.onSelect}s style={{position:'absolute',top:148,left:20,height:25,width:25}}>
+            <Text style={styles.hi}>Hi... Welcome</Text>
+            <TouchableOpacity onPress={props.onSelect}s style={{position:'absolute',top:68,left:25,height:25,width:25}}>
             <FontAwesome name="bars" size={26} color="white" />
             </TouchableOpacity>
-             <Text style={styles.userName}>Gunaseelan</Text>
+            <TouchableOpacity onPress={props.onSelect} style={{position:'absolute',top:68,left:310,}}>
+            <Ionicons name="notifications" size={28} color="black" />
+            </TouchableOpacity>
             </View>
         </LinearGradient>
     )
@@ -79,8 +82,9 @@ const styles = StyleSheet.create({
     hi: {
         position: 'absolute',
         top:140,
-        left:165,
+        left:135,
         fontSize:25,
+        fontFamily:'Texturina-BoldItalic',
         //fontWeight:'bold',
         color: 'black'
     },

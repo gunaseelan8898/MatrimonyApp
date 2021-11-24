@@ -10,7 +10,9 @@ const USER = [
         5.11,
         75,
         'Software Engineer',
-        40000
+        40000,
+        'Hindu',
+
     ),
     new User(
         'u2',
@@ -21,7 +23,8 @@ const USER = [
         5.8,
         58,
         'Doctor',
-         80000
+        80000,
+        'Hindu'
     ),
     new User(
         'u3',
@@ -32,7 +35,8 @@ const USER = [
         5.2,
         64,
         'Teacher',
-         30000
+        30000,
+        'Christian'
     ),
     new User(
         'u4',
@@ -43,7 +47,9 @@ const USER = [
         6.0,
         82,
         'Actor',
-         100000
+        100000,
+        'Hindu'
+
     ),
     new User(
         'u5',
@@ -54,7 +60,8 @@ const USER = [
         5.3,
         68,
         'Entrepreneur',
-         70000
+        70000,
+        'Hindu'
     ),
     new User(
         'u6',
@@ -65,7 +72,8 @@ const USER = [
         5.10,
         70,
         'Singer',
-         35000
+        35000,
+        'Hindu'
     ),
     new User(
         'u7',
@@ -76,7 +84,8 @@ const USER = [
         5.8,
         70,
         'Makeup-artist',
-         50000
+        50000,
+        'Hindu'
     ),
     new User(
         'u8',
@@ -87,7 +96,8 @@ const USER = [
         6.0,
         75,
         'Actor',
-         150000
+        150000,
+        'Muslim'
     ),
     new User(
         'u9',
@@ -98,7 +108,8 @@ const USER = [
         5.6,
         60,
         'Fashion Model',
-         50000
+        50000,
+        'Hindu'
     ),
     new User(
         'u10',
@@ -109,8 +120,9 @@ const USER = [
         6.1,
         85,
         'Fitness Model',
-         60000
+        60000,
+        'Hindu'
     ),
 ]
 
-export default  USER;
+export default USER;

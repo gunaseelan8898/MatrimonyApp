@@ -93,11 +93,12 @@ const styles = StyleSheet.create({
     title: {
         color: '#0d0d0d',
         fontSize: 30,
-        fontWeight: 'bold'
+        fontFamily:'OpenSans-Bold'
     },
     text: {
         color: 'grey',
-        marginTop: 20
+        marginTop: 20,
+        fontFamily:'OpenSans-Regular'
     },
     button: {
         alignItems: 'center',
@@ -113,7 +114,7 @@ const styles = StyleSheet.create({
     },
     textSign: {
         color: 'white',
-        fontWeight: 'bold'
+        fontFamily:'OpenSans-SemiBold',
     }
 });
 

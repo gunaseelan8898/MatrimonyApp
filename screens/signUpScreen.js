@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 20,
-        fontWeight: 'bold',
+        fontFamily:'OpenSans-Bold',
         marginBottom: 10
     },
     action: {
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         marginTop: 25,
         fontSize: 18,
-        fontWeight: 'bold'
+        fontFamily:'OpenSans-SemiBold',
     },
     card: {
         height: '78%',

@@ -17,6 +17,7 @@ const MemberDetailScreen = props => {
            <Text style={styles.description}>Weight  :   {selectedUser.weight}</Text>
            <Text style={styles.name}>Job       :   {selectedUser.job}</Text>
            <Text style={styles.description}>Salary   :   {selectedUser.salary}</Text>
+           <Text style={styles.description}>Religion   :   {selectedUser.religion}</Text>
            
            </View>
        </ScrollView>
@@ -35,13 +36,15 @@ const styles = StyleSheet.create({
     name:{
         margin:10,
       // textAlign:'center',
+      color:'black',
        fontSize:20,
-       color:'black'
+       fontFamily:'OpenSans-SemiBold',
     },
     description:{
         margin:10,
         fontSize:20,
-        color:'black'
+        color:'black',
+        fontFamily:'OpenSans-SemiBold',
     }
 })
 
