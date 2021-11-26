@@ -1,9 +1,10 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image,TextInput,ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Image,TextInput,ScrollView,TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { BlurView } from 'expo-blur'
+import { Ionicons } from '@expo/vector-icons';
 
-const ProfileScreen = () => {
+const ProfileScreen = (props) => {
     return (
         <View style={{ flex: 1 }}>
             <LinearGradient
@@ -12,6 +13,9 @@ const ProfileScreen = () => {
                 end={{ x: 1, y: 1 }}
                 style={styles.gradient}>
                 <Image source={require('../assets/male.png')} style={styles.user} />
+                <TouchableOpacity style={styles.back} onPress={() => {props.navigation.navigate('Home')}} >
+                <Ionicons name="ios-arrow-back" size={24} color="black" />
+                </TouchableOpacity>
             </LinearGradient>
             <ScrollView >
             <Text style={styles.label}>Profile Image</Text>
@@ -105,6 +109,19 @@ const ProfileScreen = () => {
                         onChangeText={() => { }}
                     />
                 </View>
+                <Text style={styles.label}>Mother Tongue</Text>
+                <View style={styles.action}>
+                    <TextInput
+                        placeholder="Enter Language"
+                        placeholderTextColor="#636261"
+                        maxLength={8}
+                        secureTextEntry={true}
+                        selectionColor='black'
+                        style={{ color: 'black', width: 195, fontSize: 16, }}
+                        autoCapitalize="none"
+                        onChangeText={() => { }}
+                    />
+                </View>
             </ScrollView>
         </View>
     )
@@ -157,4 +174,9 @@ const styles = StyleSheet.create({
         marginVertical: 5,
         justifyContent: 'space-between'
     },
+    back:{
+        flexDirection:'row',
+        position:'absolute',
+        top:70,
+        left:25}
 })

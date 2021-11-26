@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     justifyContent:'space-between',
     paddingHorizontal:15,
     paddingTop:10,
-    backgroundColor:'#fdf7ff'
+    backgroundColor:'#ccffea'
 },
   name: {
     fontSize:20,

@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import { Image, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import * as Animatable from 'react-native-animatable';
 import { FontAwesome } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
+
+
 
 
 export default function HeaderTab(props) {
@@ -39,11 +40,8 @@ export default function HeaderTab(props) {
             <Image source={require('../assets/handwaving.png')} style={{position:'absolute',height:40,width:40,top:128,left:80}} />
             </Animatable.View>
             <Text style={styles.hi}>Hi... Welcome</Text>
-            <TouchableOpacity onPress={props.onSelect}s style={{position:'absolute',top:68,left:25,height:25,width:25}}>
+            <TouchableOpacity onPress={props.onSelect} style={{position:'absolute',top:68,left:25,height:25,width:25}}>
             <FontAwesome name="bars" size={26} color="white" />
-            </TouchableOpacity>
-            <TouchableOpacity onPress={props.onSelect} style={{position:'absolute',top:68,left:310,}}>
-            <Ionicons name="notifications" size={28} color="black" />
             </TouchableOpacity>
             </View>
         </LinearGradient>

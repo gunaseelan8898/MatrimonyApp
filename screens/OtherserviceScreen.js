@@ -3,7 +3,7 @@ import { StyleSheet, Text, View,TouchableOpacity} from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Ionicons } from '@expo/vector-icons';
 
-const SearchScreen = (props) => {
+const OtherserviceScreen = (props) => {
     return (
         <LinearGradient colors={['#F66D64', '#F661A3']} style={styles.header}
             start={{ x: 0, y: 1 }}
@@ -12,13 +12,13 @@ const SearchScreen = (props) => {
                 <TouchableOpacity onPress={() => {props.navigation.navigate('Home')}} >
                 <Ionicons name="ios-arrow-back" size={24} color="black" />
                 </TouchableOpacity>
-                <Text style={styles.title} >Searches</Text>
+                <Text style={styles.title} >Other Services</Text>
                 </View>
             </LinearGradient>
     )
 }
 
-export default SearchScreen
+export default OtherserviceScreen
 
 const styles = StyleSheet.create({
     header: {

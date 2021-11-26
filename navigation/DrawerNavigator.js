@@ -26,12 +26,12 @@ const AppDrawer = createDrawerNavigator({
                 <Image source={require('../assets/male.png')} style={styles.user} />
                 <View style={styles.lineStyle} />
                 <TouchableOpacity onPress={() => { props.navigation.navigate('Profile') }} style={{ flexDirection: 'row', marginLeft: 35, marginTop: 20, alignItems: 'center' }}>
-                    <MaterialCommunityIcons name="account-circle-outline" size={30} color="black" />
-                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>View Profile</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
-                    <MaterialCommunityIcons name="account-edit-outline" size={30} color="black" />
+                <MaterialCommunityIcons name="account-edit-outline" size={30} color="black" />
                     <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>Edit Profile</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => { props.navigation.navigate('Home') }} style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
+                <Ionicons name="ios-home-outline" size={24} color="black" />
+                    <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}> Home </Text>
                 </TouchableOpacity>
                 <View style={{
                     borderWidth: 0.2,
@@ -39,11 +39,11 @@ const AppDrawer = createDrawerNavigator({
                     marginTop: 20,
                     marginHorizontal: 10
                 }} />
-                <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 20, alignItems: 'center' }}>
+                <TouchableOpacity onPress={() => { props.navigation.navigate('Notification') }} style={{ flexDirection: 'row', marginLeft: 35, marginTop: 20, alignItems: 'center' }}>
                     <Ionicons name="ios-notifications-circle-outline" size={30} color="black" />
                     <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>Notifications</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
+                <TouchableOpacity onPress={() => { props.navigation.navigate('Search') }} style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
                     <MaterialIcons name="search" size={30} color="black" />
                     <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>Searches</Text>
                 </TouchableOpacity>
@@ -53,11 +53,11 @@ const AppDrawer = createDrawerNavigator({
                     marginTop: 20,
                     marginHorizontal: 10
                 }} />
-                <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 20, alignItems: 'center' }}>
+                <TouchableOpacity onPress={() => { props.navigation.navigate('Other') }} style={{ flexDirection: 'row', marginLeft: 35, marginTop: 20, alignItems: 'center' }}>
                     <MaterialIcons name="miscellaneous-services" size={30} color="black" />
                     <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 15 }}>Other Services</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
+                <TouchableOpacity onPress={() => { props.navigation.navigate('About') }} style={{ flexDirection: 'row', marginLeft: 35, marginTop: 25, alignItems: 'center' }}>
                     <AntDesign name="infocirlceo" size={25} color="black" />
                     <Text style={{ fontSize: 18,fontFamily:'OpenSans-SemiBold', marginLeft: 17 }}>About</Text>
                 </TouchableOpacity>

@@ -29,7 +29,7 @@ const TabNavigator = createMaterialBottomTabNavigator({
             navigationOptions: {
                 tabBarIcon: tabInfo => {
                   return (
-                    <MaterialCommunityIcons name="cards-outline" size={26} color="black" />
+                    <MaterialIcons name="search" size={30} color="black" />
                   );
                 },
               }
